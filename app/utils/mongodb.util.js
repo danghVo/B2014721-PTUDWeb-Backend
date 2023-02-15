@@ -1,7 +1,6 @@
 const { MongoClient } = require("mongodb");
 
 const config = require("../config/index.js");
-const uri = config.db.uri;
 class MongoDB {
     static connect = async (uri) => {
         if(this.client) return this.client;
